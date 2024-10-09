@@ -1,0 +1,169 @@
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: 'Prompt', sans-serif;
+    animation: fadeIn 1s ease-out; /* Animate body fade-in */
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    animation: fadeIn 0.8s ease-out; /* Animate container fade-in */
+}
+
+.header {
+    background-color: #6a0dad;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 15px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.question {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+}
+
+.answers button {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth hover and click transition */
+    font-family: 'Prompt', sans-serif;
+}
+
+.answers button:hover {
+    background-color: #55009e;
+    transform: translateY(-3px); /* Button "lift" on hover */
+}
+
+.answers button:active {
+    transform: translateY(0); /* Reset button position on click */
+}
+
+.footer {
+    text-align: center;
+    color: #6a0dad;
+    font-size: 14px;
+}
+
+.cover {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+    animation: fadeIn 1.2s ease-out; /* Animate cover fade-in */
+}
+
+.cover h1 {
+    font-size: 2.5rem;
+    color: #6a0dad;
+    margin-bottom: 20px;
+}
+
+.cover p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.cover button {
+    background-color: #6a0dad;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth hover and click transition */
+}
+
+.cover button:hover {
+    background-color: #55009e;
+    transform: scale(1.05); /* Button "grow" on hover */
+}
+
+.cover button:active {
+    transform: scale(1); /* Reset button scale on click */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cover {
+        padding: 30px 15px;
+    }
+
+    .cover h1 {
+        font-size: 2rem;
+    }
+
+    .cover p {
+        font-size: 1rem;
+    }
+
+    .cover button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cover {
+        padding: 20px 10px;
+    }
+
+    .cover h1 {
+        font-size: 1.8rem;
+    }
+
+    .cover p {
+        font-size: 0.9rem;
+    }
+
+    .cover button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
