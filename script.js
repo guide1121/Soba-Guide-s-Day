@@ -62,6 +62,6 @@
                     button.textContent = `${questions[currentQuestionIndex].answers[index]}`;
                 });
             } else {
-                document.querySelector('.quiz').innerHTML = '<h2>เย่ะ 💜 <a href="https://forms.gle/pTTfiLWVE2JvoFmB6">มาตรงนี้ต่อหน่อยยย</a></h2>';
+                document.querySelector('.quiz').innerHTML = '<h2>เย่ะ 💜 <a href="https://forms.gle/pTTfiLWVE2JvoFmB6">กดตรงนี้ต่อหน่อยยย</a></h2>';
             }
         }
